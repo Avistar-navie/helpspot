@@ -1,5 +1,5 @@
-console.log('scripts.js loaded');
 document.getElementById('request-form').addEventListener('submit', function (event) {
+    console.log('Form submitted');
     event.preventDefault(); // Prevent the form from submitting
 
     // Get form values
