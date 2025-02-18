@@ -1,3 +1,4 @@
+console.log('scripts.js loaded');
 document.getElementById('request-form').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent the form from submitting
 
