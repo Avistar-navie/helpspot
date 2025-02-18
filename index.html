@@ -15,8 +15,18 @@
     <main>
         <section id="need-help">
             <h2>I Need Help Today</h2>
-            <p>Post your request for assistance here.</p>
-            <button onclick="location.href='#'">Post a Request</button>
+            <form id="request-form">
+                <label for="title">Request Title:</label>
+                <input type="text" id="title" name="title" required>
+        
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+        
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+        
+                <button type="submit">Submit Request</button>
+            </form>
         </section>
 
         <section id="can-help">
