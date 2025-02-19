@@ -16,6 +16,15 @@
         <section id="need-help">
             <h2>I Need Help Today</h2>
             <form id="request-form">
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="" disabled selected>Select a category</option>
+                    <option value="personal-time">Personal Time</option>
+                    <option value="professional-advice">Professional Advice</option>
+                    <option value="job-offers">Job Offers</option>
+                    <option value="other">Other</option>
+                </select>
+
                 <label for="title">Request Title:</label>
                 <input type="text" id="title" name="title" required>
         
@@ -33,6 +42,15 @@
         <section id="can-help">
             <h2>I Can Help Today</h2>
             <form id="help-form">
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="" disabled selected>Select a category</option>
+                    <option value="personal-time">Personal Time</option>
+                    <option value="professional-advice">Professional Advice</option>
+                    <option value="job-offers">Job Offers</option>
+                    <option value="other">Other</option>
+                </select>
+
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
         
