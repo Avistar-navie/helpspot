@@ -1,3 +1,35 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: center;
+}
+
+/* Form styles */
 form {
     display: flex;
     flex-direction: column;
@@ -6,57 +38,25 @@ form {
 
 label {
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
-input, textarea {
+input, textarea, select {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
-button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 
-button[type="submit"]:hover {
-    background-color: #45a049;
-}
-#can-help form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#can-help label {
-    font-weight: bold;
-}
-
-#can-help input, #can-help textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#can-help button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#can-help button[type="submit"]:hover {
-    background-color: #45a049;
-}
-/* Existing styles remain unchanged */
-
-/* New styles for buttons */
+/* Button styles */
 button {
     background-color: #4CAF50;
     color: white;
@@ -64,9 +64,49 @@ button {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px; /* Add some spacing */
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 button:hover {
     background-color: #45a049;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Collapsible section styles (for categories.html) */
+.category {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+}
+
+.category h2 {
+    cursor: pointer;
+    color: #4CAF50;
+}
+
+.category h2:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: none; /* Hidden by default */
+    margin-top: 10px;
+}
+
+.content ul {
+    list-style-type: disc;
+    margin-left: 20px;
 }
