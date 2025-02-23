@@ -16,7 +16,8 @@ header {
 
 main {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
 
@@ -25,7 +26,9 @@ section {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 45%;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -81,6 +84,20 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Styles for displayed requests and offers */
+.request-item, .offer-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.request-item h3, .offer-item h3 {
+    margin-top: 0;
+    color: #4CAF50;
 }
 
 /* Collapsible section styles (for categories.html) */

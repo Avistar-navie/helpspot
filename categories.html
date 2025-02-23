@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Categories - HelpSpot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Help Categories</h1>
+        <p>Explore the different types of help you can request or offer.</p>
+    </header>
+
+    <main>
+        <section class="category">
+            <h2 onclick="toggleSection('personal-time')">Personal Time</h2>
+            <div id="personal-time" class="content">
+                <ul>
+                    <li>Pet Sitting</li>
+                    <li>Relocation Help</li>
+                    <li>Party Arrangement</li>
+                    <li>Real-Time Calls (e.g., Recipe Help)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2 onclick="toggleSection('professional-advice')">Professional Advice</h2>
+            <div id="professional-advice" class="content">
+                <ul>
+                    <li>Legal Advice</li>
+                    <li>Financial Advice</li>
+                    <li>Medical Advice</li>
+                    <li>Other Professional Advice</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2 onclick="toggleSection('job-offers')">Job Offers</h2>
+            <div id="job-offers" class="content">
+                <ul>
+                    <li>One-Day Tasks (e.g., Mow the Lawn)</li>
+                    <li>Side Hustles (P2P or B2P)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2 onclick="toggleSection('other')">Other</h2>
+            <div id="other" class="content">
+                <ul>
+                    <li>Miscellaneous Requests</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 HelpSpot. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

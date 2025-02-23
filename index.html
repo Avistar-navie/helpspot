@@ -24,6 +24,8 @@
                     <option value="job-offers">Job Offers</option>
                     <option value="other">Other</option>
                 </select>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
 
                 <label for="title">Request Title:</label>
                 <input type="text" id="title" name="title" required>
@@ -56,6 +58,9 @@
         
                 <label for="skills">Skills or Resources You Can Offer:</label>
                 <textarea id="skills" name="skills" required></textarea>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
         
                 <label for="availability">Availability:</label>
                 <input type="text" id="availability" name="availability" required>
@@ -66,6 +71,15 @@
                 <button type="submit">Offer Help</button>
             </form>
             <button onclick="location.href='categories.html'">Browse Help Categories</button>
+        </section>
+        <section id="active-requests">
+            <h2>Active Requests</h2>
+            <div id="requests-list"></div>
+        </section>
+        
+        <section id="active-offers">
+            <h2>Active Offers</h2>
+            <div id="offers-list"></div>
         </section>
     </main>
 
