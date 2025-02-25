@@ -13,80 +13,78 @@
     </header>
 
     <main>
-        <section id="need-help">
-            <h2>I Need Help Today</h2>
-            <form id="request-form">
-                <label for="category">Category:</label>
-                <select id="category" name="category" required>
-                    <option value="" disabled selected>Select a category</option>
-                    <option value="personal-time">Personal Time</option>
-                    <option value="professional-advice">Professional Advice</option>
-                    <option value="job-offers">Job Offers</option>
-                    <option value="other">Other</option>
-                </select>
-            
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-            
-                <label for="title">Request Title:</label>
-                <input type="text" id="title" name="title" required>
-            
-                <label for="description">Description:</label>
-                <textarea id="description" name="description" required></textarea>
-            
-                <label for="location">Location:</label>
-                <input type="text" id="location" name="location" required>
-            
-                <button type="submit">Submit Request</button>
-            </form>
-            <button onclick="location.href='categories.html'">Browse Help Categories</button>
-        </section>
+        <!-- Add a container for the two sections -->
+        <div class="form-container">
+            <section id="need-help">
+                <h2>I Need Help Today</h2>
+                <form id="request-form">
+                    <!-- Form fields for "I Need Help Today" -->
+                    <label for="request-category">Category:</label>
+                    <select id="request-category" name="category" required>
+                        <option value="" disabled selected>Select a category</option>
+                        <option value="personal-time">Personal Time</option>
+                        <option value="professional-advice">Professional Advice</option>
+                        <option value="job-offers">Job Offers</option>
+                        <option value="other">Other</option>
+                    </select>
 
-        <section id="can-help">
-            <h2>I Can Help Today</h2>
-            <form id="help-form">
-                <label for="category">Category:</label>
-                <select id="category" name="category" required>
-                    <option value="" disabled selected>Select a category</option>
-                    <option value="personal-time">Personal Time</option>
-                    <option value="professional-advice">Professional Advice</option>
-                    <option value="job-offers">Job Offers</option>
-                    <option value="other">Other</option>
-                </select>
-            
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-            
-                <label for="skills">Skills or Resources You Can Offer:</label>
-                <textarea id="skills" name="skills" required></textarea>
-            
-                <label for="location">Location:</label>
-                <input type="text" id="location" name="location" required>
-            
-                <label for="availability">Availability:</label>
-                <input type="text" id="availability" name="availability" required>
-            
-                <label for="contact">Contact Information:</label>
-                <input type="text" id="contact" name="contact" required>
-            
-                <button type="submit">Offer Help</button>
-            </form>
-            <button onclick="location.href='categories.html'">Browse Help Categories</button>
-        </section>
-        <section id="active-requests">
-            <h2>Active Requests</h2>
-            <div id="requests-list"></div>
-        </section>
-        
-        <section id="active-offers">
-            <h2>Active Offers</h2>
-            <div id="offers-list"></div>
-        </section>
+                    <label for="request-name">Your Name:</label>
+                    <input type="text" id="request-name" name="name" required>
+
+                    <label for="title">Request Title:</label>
+                    <input type="text" id="title" name="title" required>
+
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" required></textarea>
+
+                    <label for="request-location">Location:</label>
+                    <input type="text" id="request-location" name="location" required>
+
+                    <button type="submit">Submit Request</button>
+                </form>
+                <button onclick="location.href='categories.html'">Browse Help Categories</button>
+            </section>
+
+            <section id="can-help">
+                <h2>I Can Help Today</h2>
+                <form id="help-form">
+                    <!-- Form fields for "I Can Help Today" -->
+                    <label for="help-category">Category:</label>
+                    <select id="help-category" name="category" required>
+                        <option value="" disabled selected>Select a category</option>
+                        <option value="personal-time">Personal Time</option>
+                        <option value="professional-advice">Professional Advice</option>
+                        <option value="job-offers">Job Offers</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="help-name">Your Name:</label>
+                    <input type="text" id="help-name" name="name" required>
+
+                    <label for="skills">Skills or Resources You Can Offer:</label>
+                    <textarea id="skills" name="skills" required></textarea>
+
+                    <label for="help-location">Location:</label>
+                    <input type="text" id="help-location" name="location" required>
+
+                    <label for="availability">Availability:</label>
+                    <input type="text" id="availability" name="availability" required>
+
+                    <label for="contact">Contact Information:</label>
+                    <input type="text" id="contact" name="contact" required>
+
+                    <button type="submit">Offer Help</button>
+                </form>
+                <button onclick="location.href='categories.html'">Browse Help Categories</button>
+            </section>
+        </div>
+
+        <!-- Active Requests and Offers Section -->
         <section>
             <h2>View Active Requests and Offers</h2>
             <p>Check out all active requests and offers on HelpSpot.</p>
             <a href="active-entries.html"><button>View Active Entries</button></a>
-        </section>        
+        </section>
     </main>
 
     <footer>
