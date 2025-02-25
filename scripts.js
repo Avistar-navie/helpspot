@@ -147,3 +147,55 @@ function toggleSection(sectionId) {
         section.style.display = "block";
     }
 }
+// Function to display requests
+function displayRequests() {
+    const requests = JSON.parse(localStorage.getItem('requests')) || [];
+    const requestsList = document.getElementById('requests-list');
+    if (requestsList) {
+        requestsList.innerHTML = ''; // Clear the list
+
+        requests.forEach((request, index) => {
+            const requestItem = document.createElement('div');
+            requestItem.className = 'request-item';
+            requestItem.innerHTML = `
+                <h3>${request.title}</h3>
+                <p><strong>Name:</strong> ${request.name}</p>
+                <p><strong>Category:</strong> ${request.category}</p>
+                <p><strong>Description:</strong> ${request.description}</p>
+                <p><strong>Location:</strong> ${request.location}</p>
+                <p><strong>Posted:</strong> ${request.timestamp}</p>
+            `;
+            requestsList.appendChild(requestItem);
+        });
+    }
+}
+
+// Function to display offers
+function displayOffers() {
+    const offers = JSON.parse(localStorage.getItem('offers')) || [];
+    const offersList = document.getElementById('offers-list');
+    if (offersList) {
+        offersList.innerHTML = ''; // Clear the list
+
+        offers.forEach((offer, index) => {
+            const offerItem = document.createElement('div');
+            offerItem.className = 'offer-item';
+            offerItem.innerHTML = `
+                <h3>${offer.name}</h3>
+                <p><strong>Category:</strong> ${offer.category}</p>
+                <p><strong>Skills/Resources:</strong> ${offer.skills}</p>
+                <p><strong>Location:</strong> ${offer.location}</p>
+                <p><strong>Availability:</strong> ${offer.availability}</p>
+                <p><strong>Contact:</strong> ${offer.contact}</p>
+                <p><strong>Posted:</strong> ${offer.timestamp}</p>
+            `;
+            offersList.appendChild(offerItem);
+        });
+    }
+}
+
+// Display requests and offers when the page loads
+window.onload = function () {
+    displayRequests();
+    displayOffers();
+};
